@@ -1,5 +1,11 @@
 # mysqlSplitDb
 
+#use this command to split and get a single table
+sed -n -e '/CREATE TABLE.*`vicidial_conference`/,/CREATE TABLE/p' dbdump.sql > tablename.sql
+
+
+#or use this sh
+
 #!/bin/bash
 
 ####
